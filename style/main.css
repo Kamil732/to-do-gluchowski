@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+h1 {
+    margin: 0 auto 10px auto;
+    font-size: 34px;
+}
+#container {
+    min-width: 500px;
+    border-radius: 6px;
+    padding: 5px 10px 5px;
+    background: #eeeeee;
+}
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+#add-to-do-text {
+    font-size: 20px;
+    background: transparent;
+    outline: none;
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid #aaaaaa;
+    transition: border-color 0.65s ease;
+    border-radius: 3px;
+}
+#add-to-do-text:focus {
+    border-color: #33cc33;
+}
+#add-to-do-btn {
+    outline: none;
+    height: 30px;
+    background: #33cc33;
+    border: 1px solid green;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: all 0.45s ease;
+    border-radius: 6px;
+}
+#add-to-do-btn:hover {
+    background: #22aa22;
+    letter-spacing: 5px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    text-align: center;
+    font-size: 20px;
+    border-radius: 6px;
+    background: white;
+    margin-bottom: 5px;
+}
+.list-del-btn, .list-edit-btn, .list-agree-btn {
+    outline: none;
+    height: 1.45rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.list-del-btn {
+    float: left;
+    color: white;
+    border: 1px solid #ff0000;
+    background: #ff0000;
+}
+.list-del-btn:hover {
+    background: #dd5555;
+    border-color: black;
+}
+.list-edit-btn {
+    float: right;
+    color: white;
+    background: #2c8d23;
+    border: 1px solid #2c8d23;
+}
+.list-edit-btn:hover {
+    background: #3d9e34;
+    border-color: black;
+}
+.edit-text {
+    border: none;
+    text-align: center;
+    width: 87%;
+    font-size: 17px;
+    height: 1.4rem;
+    outline: none;
+}
+.list-agree-btn {
+    float: right;
+    background: #3686bb;
+    border: 1px solid #3686bb;
+}
+.list-agree-btn:hover {
+    background: #4797cc;
+    border-color: black;
+}
